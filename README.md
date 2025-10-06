@@ -31,13 +31,6 @@ Public key: my_terraform_key.pub
 
 Terraform uses this key to provision EC2 and connect via Ansible.
 
-- #### Folder Structure
-Terraform_Ansible/
-├── terraform/          # Terraform configuration files
-├── ansible/            # Ansible playbooks
-├── run.sh              # Automation script
-└── Keys/               # Local SSH keys
-
 - #### Key Commands
 1. Initialize Terraform
 cd ~/Terraform_Ansible/terraform
