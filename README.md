@@ -1,6 +1,8 @@
 ## Terraform + Ansible Automation Project
 #### Automates deployment of an AWS EC2 instance with Nginx using Terraform and Ansible.
 
+ ![Pic](Architecture.jpeg)
+
 - #### Project Overview
 
 - Terraform: Provision EC2 instance, security group, and key pair.
