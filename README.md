@@ -26,8 +26,8 @@
 - Command - mkdir -p ~/Terraform_Ansible/Keys  
             ssh-keygen -t rsa -b 4096 -f ~/Terraform_Ansible/Keys/my_terraform_key
 
-Private key: my_terraform_key  
-Public key: my_terraform_key.pub
+                        Private key: my_terraform_key  
+                        Public key: my_terraform_key.pub
 
 Terraform uses this key to provision EC2 and connect via Ansible.
 
