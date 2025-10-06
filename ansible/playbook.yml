@@ -1,0 +1,25 @@
+- name: "Configure Web Server"
+  hosts: web
+  become: yes
+  tasks:
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: Enable and Start the Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Deploy custom web page
+      copy:
+        dest: /usr/share/nginx/html/index.html
+        content: |
+         <html>
+            <head><title><b>Terraform + Ansible Infrastructure Deployment</b></title></head>
+            <body>
+              <h1><b>Deployed by Terraform and configured by Ansible</b></h1>
+            </body>
+          </html>
