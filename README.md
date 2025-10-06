@@ -36,17 +36,17 @@ Terraform uses this key to provision EC2 and connect via Ansible.
 cd ~/Terraform_Ansible/terraform  
 terraform init
 
-2. Apply Terraform
+2. Apply Terraform  
 terraform apply -auto-approve  
 Creates EC2, security group, and key pair.  
 Outputs the public IP.
 
-3. Run Ansible Playbook
+3. Run Ansible Playbook  
 cd ../ansible  
 ansible-playbook -i inventory.ini playbook.yml  
 Configures EC2 instance: installs Nginx, deploys web page.
 
-4. Full Automation
+4. Full Automation  
 cd ~/Terraform_Ansible/terraform  
 chmod +x run.sh  
 ./run.sh  
