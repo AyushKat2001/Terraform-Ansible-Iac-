@@ -23,7 +23,7 @@
 
 - Generate a key for Terraform:
 
-- Command - mkdir -p ~/Terraform_Ansible/Keys
+- Command - mkdir -p ~/Terraform_Ansible/Keys  
             ssh-keygen -t rsa -b 4096 -f ~/Terraform_Ansible/Keys/my_terraform_key
 
 Private key: my_terraform_key
